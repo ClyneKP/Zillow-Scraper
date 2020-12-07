@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zillow Scraper</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+	<style id="settings"></style>
+</head>
+<body>
+
+	<div class="settings">
+
+		<span class="pause glyphicon glyphicon-play" title="Record" data-title="Pause" ></span>
+		<span class="download glyphicon glyphicon-download" title="Download"></span>
+		<span class="clear glyphicon glyphicon-trash" title="Clear"></span>
+
+	</div>
+
+	<br>
+    <div class="container">
+    	Press the 'Record' button in the top-left corner and navigate to Zillow, searches will automatically be captured. Press the download button once you've scraped all needed records.<br>
+    <div id="loader" style='width: 100%; margin: 0 auto; display:none;'><div class="loader" style ='float: left;'></div><p id="pages"></p><br></div>
+    <div style='width: 100%; margin: 0 auto; display:block;'><div style ='float: left;'><h3> Data Sample:</h3></div><div style ='float: right;'><h3 id="results"> Results Captured: 0</h3></div></div>
+      <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Zillow ID</th>
+                <th>Address</th>
+                <th>Area</th>
+                <th>Price</th>
+                <th>Transaction Type</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/underscore-min.js"></script>
+</body>
+</html>
